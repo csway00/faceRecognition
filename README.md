@@ -4,35 +4,23 @@
 本项目是基于Qt5的人脸检测应用，支持多摄像头，集成百度人脸检测API，通过HTTPS安全请求，解析人脸特征信
 息，并采用多线程优化性能。
 
+![image-20241018210355765](README.assets/image-20241018210355765.png)
+
+#### 实现的功能
+
+- 实时人脸检测：系统能够实时检测并识别来自多个摄像头输入的视频流中的人脸；
+- 高效图像处理：通过多线程技术优化了图像处理逻辑，确保在处理大量数据时系统的响应速度和稳定性；
+- 安全通信：实现了HTTPS请求的SSL配置，保障了数据传输的安全性。
+
 #### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Qt、HTTPS、Json、多线程
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+* 我的Qt版本是QT5.15.2的, 此项目不支持QT6
 
-#### 参与贡献
+* 此项目需要`HTTPS`通信,  所以需要QT能用https 
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+  QT用不了https的, 可以参考这篇博客:https://blog.csdn.net/qq_32355021/article/details/124089942 , openssl-1.1.1w-win64: https://pan.baidu.com/s/1kK4zvQiU4JkPDxuDTgojhg?pwd=cdef
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+​	
